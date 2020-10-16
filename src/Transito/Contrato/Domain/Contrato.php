@@ -1,9 +1,8 @@
 <?php
 
-
 namespace Cantera\Transito\Contrato\Domain;
 
-
+use Cantera\Transito\Cliente\Domain\ClienteId;
 use Cantera\Transito\Material\Domain\Material;
 use Cantera\Transito\Material\Domain\MaterialId;
 use Cantera\Transito\Vehiculo\Dominio\Vehiculo;
@@ -17,6 +16,7 @@ class Contrato
     private $fecha;
     private $detalles;
     private $vehiculos;
+    private $clienteId;
 
     /**
      * Contrato constructor.
@@ -25,15 +25,26 @@ class Contrato
      * @param ContratoUbicacion $ubicacion ;
      * @param ContratoFecha $fecha ;
      */
-    public function __construct(ContratoId $id, ContratoSerie $serie, ContratoUbicacion $ubicacion, ContratoFecha $fecha)
+    public function __construct(ContratoId $id, ContratoSerie $serie, ContratoUbicacion $ubicacion, ContratoFecha $fecha,ClienteId $clienteId)
     {
         $this->id = $id;
         $this->serie = $serie;
         $this->ubicacion = $ubicacion;
         $this->fecha = $fecha;
+        $this->clienteId = $clienteId;
         $this->detalles = new ContratoDetalle([]);
         $this->vehiculos = new ContratoVehiculo([]);
     }
+
+    /**
+     * @return ClienteId
+     */
+    public function getClienteId(): ClienteId
+    {
+        return $this->clienteId;
+    }
+
+
 
     /**
      * @return ContratoDetalle
@@ -99,7 +110,7 @@ class Contrato
         $detalle = $this->detalles->search(function(Detalle $item) use ($materialId,$operacion){
             return $item->getMaterial()->getId()->equals($materialId)  && $item->getTransaccion()->equals($operacion);
         });
-        
+
         return $detalle->getTermino()->getVolumen() > $carga->value();
     }
 
