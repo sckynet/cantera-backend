@@ -19,22 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Conductor Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoFecha.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoId.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoSerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoUbicacion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/FechaValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Contrato.php Jordan" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,13 +175,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602853959581</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Contrato.php Jordan">
+      <created>1602868743558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602868743558</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +248,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primera prueba jordan" />
     <MESSAGE value="Conductor Jordan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conductor Jordan" />
+    <MESSAGE value="Contrato.php Jordan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contrato.php Jordan" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="219" key="#Notifications" timestamp="1602854012530">
@@ -290,10 +285,10 @@
     </state>
     <state x="216" y="16" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858107581" />
     <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602854764360" />
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602854776885">
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602868762990">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602854776885" />
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602868762990" />
     <state x="555" y="243" key="cloudConfig.SelfSettingsDialog" timestamp="1602854491198">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
