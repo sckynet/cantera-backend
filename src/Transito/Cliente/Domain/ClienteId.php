@@ -1,6 +1,6 @@
 <?php
 
-namespace Cantera\Transito\cliente\Domain;
+namespace Cantera\Transito\Cliente\Domain;
 
 use Cantera\Transito\Shared\Domain\ValueObject\Uuid;
 

@@ -2,6 +2,7 @@
 
 namespace Tests\Unit\transito\ticket\domain;
 
+<<<<<<< HEAD
 use Cantera\Transito\cliente\Domain\Cliente;
 use Cantera\Transito\cliente\Domain\ClienteId;
 use Cantera\Transito\Cliente\Domain\ClienteIdentificacion;
@@ -9,10 +10,23 @@ use Cantera\Transito\cliente\Domain\ClienteNombre;
 use Cantera\Transito\cliente\Domain\ClienteTelefono;
 use Cantera\Transito\cliente\Domain\ClienteTipo;
 use Cantera\Transito\cliente\Domain\ClienteUbicacion;
+=======
+use Cantera\Transito\Cliente\Domain\Cliente;
+use Cantera\Transito\Cliente\Domain\ClienteId;
+use Cantera\Transito\Cliente\Domain\ClienteNombre;
+use Cantera\Transito\Cliente\Domain\ClienteTelefono;
+use Cantera\Transito\Cliente\Domain\ClienteTipo;
+use Cantera\Transito\Cliente\Domain\ClienteUbicacion;
+>>>>>>> f55122eb0af93b618a22c913729e927fc8145d45
 use Cantera\Transito\Conductor\Dominio\Conductor;
 use Cantera\Transito\Conductor\Dominio\ConductorId;
 use Cantera\Transito\Conductor\Dominio\ConductorNombre;
 use Cantera\Transito\Conductor\Dominio\CondutorTelefono;
+use Cantera\Transito\Contrato\Domain\Contrato;
+use Cantera\Transito\Contrato\Domain\ContratoFecha;
+use Cantera\Transito\Contrato\Domain\ContratoId;
+use Cantera\Transito\Contrato\Domain\ContratoSerie;
+use Cantera\Transito\Contrato\Domain\ContratoUbicacion;
 use Cantera\Transito\Material\Domain\Material;
 use Cantera\Transito\Material\Domain\MaterialId;
 use Cantera\Transito\Material\Domain\MaterialNombre;
@@ -44,12 +58,19 @@ class TicketTest extends TestCase
      * Entonces
      * El sistema presentará el mensaje. “Atención!, La cantidad de carga ingresada supera el volumen disponible del contrato.”.
      */
+<<<<<<< HEAD
     public function testGenerarTicketSinVolumenDisponible(): void {
         $material = new Material(MaterialId::random(), new MaterialNombre('RELLENO'));
         $cliente = new Cliente(ClienteId::random(),new ClienteIdentificacion('1065848333'), new ClienteNombre('CONSTRUCTURA MAYALES'), new ClienteTelefono('3152556478'), new ClienteUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ClienteTipo('JURIDICA'));
+=======
+    public function testGenerarTicketSinVolumenDisponible(): void
+    {
+        $material = new Material(new MaterialId('1'), new MaterialNombre('RELLENO'));
+        $cliente = new Cliente(new ClienteId('123456789-7'), new ClienteNombre('CONSTRUCTURA MAYALES'), new ClienteTelefono('3152556478'), new ClienteUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ClienteTipo('JURIDICA'));
+>>>>>>> f55122eb0af93b618a22c913729e927fc8145d45
         $conductor = new Conductor(new ConductorId('123456'), new ConductorNombre('FABIAN'), new CondutorTelefono('3005228888'));
-        $vehiculo = new Vehiculo(new VehiculoPlaca('ADF-123A'), new VehiculoCapacidad(8), new VehiculoTipo('VOLQUETA'),$conductor->getId());
-        $contrato = new Contrato(4, '123', $cliente->getId(), '05-10-2020', 'Valledupar', 'CESAR', 'CLL38#18D-30');
+        $vehiculo = new Vehiculo(new VehiculoPlaca('ADF-123A'), new VehiculoCapacidad(8), new VehiculoTipo('VOLQUETA'), $conductor->getId());
+        $contrato = new Contrato(new ContratoId(4), new ContratoSerie('123'), new ContratoUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ContratoFecha(5, 10, 2020));
         $contrato->addDetalle('CARGA', 8, 'DEFINIDO', $material->getId());
         $contrato->addVechiculo($vehiculo->getId());
         $result = $contrato->addTicket(12, $material->getId(), $vehiculo->getId());
