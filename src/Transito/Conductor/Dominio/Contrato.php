@@ -7,5 +7,4 @@ namespace Cantera\Transito\Conductor\Dominio;
 class Contrato
 {
    private $serie;
-   private $
 }
