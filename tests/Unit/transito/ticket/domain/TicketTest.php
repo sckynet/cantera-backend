@@ -2,12 +2,12 @@
 
 namespace Tests\Unit\transito\ticket\domain;
 
-use Cantera\Transito\cliente\domain\Cliente;
-use Cantera\Transito\cliente\domain\ClienteId;
-use Cantera\Transito\cliente\domain\ClienteNombre;
-use Cantera\Transito\cliente\domain\ClienteTelefono;
-use Cantera\Transito\cliente\domain\ClienteTipo;
-use Cantera\Transito\cliente\domain\ClienteUbicacion;
+use Cantera\Transito\cliente\Domain\Cliente;
+use Cantera\Transito\cliente\Domain\ClienteId;
+use Cantera\Transito\cliente\Domain\ClienteNombre;
+use Cantera\Transito\cliente\Domain\ClienteTelefono;
+use Cantera\Transito\cliente\Domain\ClienteTipo;
+use Cantera\Transito\cliente\Domain\ClienteUbicacion;
 use Cantera\Transito\Conductor\Dominio\Conductor;
 use Cantera\Transito\Conductor\Dominio\ConductorId;
 use Cantera\Transito\Conductor\Dominio\ConductorNombre;
@@ -46,9 +46,8 @@ class TicketTest extends TestCase
     public function testGenerarTicketSinVolumenDisponible(): void {
         $material = new Material(new MaterialId('1'), new MaterialNombre('RELLENO'));
         $cliente = new Cliente(new ClienteId('123456789-7'), new ClienteNombre('CONSTRUCTURA MAYALES'), new ClienteTelefono('3152556478'), new ClienteUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ClienteTipo('JURIDICA'));
-        $vehiculo = new Vehiculo(new VehiculoPlaca('ADF-123A'), new VehiculoCapacidad(8), new VehiculoTipo('VOLQUETA'));
         $conductor = new Conductor(new ConductorId('123456'), new ConductorNombre('FABIAN'), new CondutorTelefono('3005228888'));
-        $vehiculo->asignarConductor($conductor);
+        $vehiculo = new Vehiculo(new VehiculoPlaca('ADF-123A'), new VehiculoCapacidad(8), new VehiculoTipo('VOLQUETA'),$conductor->getId());
         $contrato = new Contrato(4, '123', $cliente->getId(), '05-10-2020', 'Valledupar', 'CESAR', 'CLL38#18D-30');
         $contrato->addDetalle('CARGA', 8, 'DEFINIDO', $material->getId());
         $contrato->addVechiculo($vehiculo->getId());

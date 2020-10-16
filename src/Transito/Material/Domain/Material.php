@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Cantera\Transito\Material\Domain;
 
-use Cantera\Transito\Material\Domain\MaterialId;
-use Cantera\Transito\Material\Domain\MaterialNombre;
 
 class Material
 {

@@ -20,8 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Conductor Jordan">
+      <change afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/Utils.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Contrato.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteUbicacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +154,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ivbQxaZmTWIotiLCgBf1vr1TEk" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -154,7 +165,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Transito/Shared/Domain" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -162,8 +173,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Transito/Shared/Domain" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -226,10 +242,18 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="436" y="219" key="#Notifications/0.30.1366.738@0.30.1366.738" timestamp="1602854012530" />
+    <state x="259" y="87" width="1081" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602857806323">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state x="259" y="87" width="1081" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602857806323" />
     <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1602853794360">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602853794360" />
+    <state x="584" y="187" key="FileChooserDialogImpl" timestamp="1602858732513">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state x="584" y="187" key="FileChooserDialogImpl/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858732513" />
     <state x="129" y="86" key="MergeDialog" timestamp="1602817037478">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -242,9 +266,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602853319571" />
-    <state x="184" y="44" key="SettingsEditor" timestamp="1602854764360">
-      <screen x="0" y="30" width="1366" height="738" />
+    <state x="216" y="16" key="SettingsEditor" timestamp="1602858107581">
+      <screen x="0" y="0" width="1600" height="855" />
     </state>
+    <state x="216" y="16" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858107581" />
     <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602854764360" />
     <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602854776885">
       <screen x="0" y="30" width="1366" height="738" />
