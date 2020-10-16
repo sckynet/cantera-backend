@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace CodelyTv\Shared\Domain\ValueObject;
+namespace Cantera\Transito\Shared\Domain\ValueObject;
 
 abstract class IntValueObject
 {
