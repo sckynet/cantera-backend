@@ -74,7 +74,4 @@ class TicketTest extends TestCase
         }
     }
 
-
-
-
 }

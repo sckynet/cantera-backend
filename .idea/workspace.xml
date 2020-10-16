@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Contrato.php Jordan">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -306,5 +305,9 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="555" y="243" key="cloudConfig.SelfSettingsDialog/0.30.1366.738@0.30.1366.738" timestamp="1602854491198" />
+    <state x="460" y="192" key="run.anything.popup" timestamp="1602883399323">
+      <screen x="0" y="0" width="1600" height="855" />
+    </state>
+    <state x="460" y="192" key="run.anything.popup/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602883399323" />
   </component>
 </project>
