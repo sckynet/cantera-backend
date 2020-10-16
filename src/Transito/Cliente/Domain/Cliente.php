@@ -10,14 +10,16 @@ class Cliente
 {
 
    private $id;
+   private $identificacion;
    private $nombre;
    private $ubicacion;
    private $telefono;
    private $tipo;
 
-   public function __construct(ClienteId $id,ClienteNombre $nombre, ClienteTelefono $telefono,ClienteUbicacion $ubicacion,ClienteTipo $tipo)
+   public function __construct(ClienteId $id,ClienteIdentificacion $identificacion, ClienteNombre $nombre, ClienteTelefono $telefono,ClienteUbicacion $ubicacion,ClienteTipo $tipo)
    {
             $this->id = $id;
+            $this->identificacion = $identificacion;
             $this->nombre = $nombre;
             $this->telefono = $telefono;
             $this->ubicacion = $ubicacion;
@@ -62,6 +64,10 @@ class Cliente
     public function getTipo(): ClienteTipo
     {
         return $this->tipo;
+    }
+
+    public function getIdentificacion() : CLienteIdentificacion {
+        return $this->identificacion;
     }
 
 

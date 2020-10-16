@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Conductor Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/Utils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteIdentificacion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Contrato.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteUbicacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/Uuid.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/Uuid.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -262,9 +255,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602817037494" />
-    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602853319571">
-      <screen x="0" y="30" width="1366" height="738" />
+    <state x="507" y="88" key="NewPhpClassDialog" timestamp="1602868834874">
+      <screen x="0" y="0" width="1600" height="855" />
     </state>
+    <state x="507" y="88" key="NewPhpClassDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602868834874" />
     <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602853319571" />
     <state x="216" y="16" key="SettingsEditor" timestamp="1602858107581">
       <screen x="0" y="0" width="1600" height="855" />
