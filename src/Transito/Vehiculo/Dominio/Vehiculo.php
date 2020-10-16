@@ -35,4 +35,8 @@ class Vehiculo
         return $this->tipo;
     }
 
+    public function asignarCondctor(){
+
+    }
+
 }
