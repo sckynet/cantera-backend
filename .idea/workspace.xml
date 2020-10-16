@@ -20,18 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Conductor Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/Utils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoFecha.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoSerie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoUbicacion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/FechaValueObject.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Contrato.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteUbicacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +43,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,11 +181,26 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cantera\src\Transito\Cliente\Domain" />
+      <recent name="C:\xampp\htdocs\cantera\src\Transito\Cliente\Aplication" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Transito/Shared/Domain" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -246,10 +265,10 @@
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="259" y="87" width="1081" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602857806323" />
-    <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1602853794360">
+    <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1602862837230">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602853794360" />
+    <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602862837230" />
     <state x="584" y="187" key="FileChooserDialogImpl" timestamp="1602858732513">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
@@ -262,10 +281,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602817037494" />
-    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602853319571">
+    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602863153909">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602853319571" />
+    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602863153909" />
     <state x="216" y="16" key="SettingsEditor" timestamp="1602858107581">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
