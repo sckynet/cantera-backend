@@ -23,6 +23,7 @@ use Cantera\Transito\Contrato\Domain\ContratoUbicacion;
 use Cantera\Transito\Contrato\Domain\TerminoValueObject;
 use Cantera\Transito\Contrato\Domain\TicketCarga;
 use Cantera\Transito\Contrato\Domain\TransaccionValueObject;
+use Cantera\Transito\Contrato\Domain\VehiculoSinContratoException;
 use Cantera\Transito\Contrato\Domain\VolumenDisponibleExeption;
 use Cantera\Transito\Material\Domain\Material;
 use Cantera\Transito\Material\Domain\MaterialId;
@@ -97,5 +98,18 @@ class TicketTest extends TestCase
      * @test
      */
 
+    public function testGenerarTicketDeVehiculoSinContrato() : void {
+        $material = new Material(new MaterialId(1), new MaterialNombre('RELLENO'));
+        $cliente = new Cliente(new ClienteId(1), new ClienteIdentificacion('1065848333'), new ClienteNombre('CONSTRUCTURA MAYALES'), new ClienteTelefono('3152556478'), new ClienteUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ClienteTipo('JURIDICA'));
+        $conductor = new Conductor(new ConductorId(1), new ConductorIdentificacion('123456'), new ConductorNombre('FABIAN'), new CondutorTelefono('3005228888'));
+        $vehiculo = new Vehiculo(new VehiculoId(1), new VehiculoPlaca('ADF-123A'), new VehiculoCapacidad(8), new VehiculoTipo('VOLQUETA'), $conductor->getId());
+        $contrato = new Contrato(new ContratoId(4), new ContratoSerie('123'), new ContratoUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ContratoFecha(5, 10, 2020), $cliente->getId());
+        $contrato->addDetalle(new TerminoValueObject(8, 'DEFINIDO'), new TransaccionValueObject('CARGA'), $material);
+        try {
+            $contrato->addTicket($vehiculo->getId(), $material->getId(), new TicketCarga(5));
+        } catch (VehiculoSinContratoException $exception) {
+            $this->assertEquals('Atención!, No se puede genera un ticket porque el vehículo no tiene contrato asociado.', $exception->getMessage());
+        }
+    }
 
 }
