@@ -45,19 +45,21 @@ class TicketTest extends TestCase
      * 1.3. debe haber máximo un ticket pendiente por vehículo
      * 1.4. solo se genera un ticket si la transacción es carga
      * Dado
-     * El usuario tiene un material con nombre “RELLENO”.
-     * un cliente con identificación “123456789-7”, nombre “CONSTRUCTORA MAYALES”, dirección “calle 38 #18d-30”, teléfono “3152556478” y tipo “JURIDICA”.
-     * El usuario tiene un vehículo con id “2”, placa “ADF-123A”, capacidad “8”, tipo “VOLQUETA” y manejada por el conductor con identificación “123456”, nombre “FABIAN”, teléfono “3005228888”.
-     * Un contrato con id “4” serie “123” numero contrato “25” municipio “VALLEDUPAR”, departamento “CESAR”, dirección “calle 38 #18d-30”, día “05”, mes “10”, año “2020”.
-     * Un contrato detalle con operación “CARGA”, volumen “8”, tipo “RELLENO”.
-     * Un contrato vehículo con contrato_id “4” y vehiculo_id “2”
+     * El usuario tiene un material con id “1“ nombre “RELLENO”.
+     * un cliente con id ”1”, identificación “123456789-7”, nombre “CONSTRUCTORA MAYALES”, municipio “VALLEDUPAR“, departamento “CESAR“, dirección “CLL38#18d-30”, teléfono “3152556478” y tipo “JURIDICA”.
+     * Un conductor con id “1“ identificación “123456”, nombre “FABIAN”, teléfono “3005228888”.
+     * El usuario tiene un vehículo con id “1“ placa “ADF-123A”, capacidad “8”, tipo “VOLQUETA” y conductor_id “1“.
+     * Un contrato con id ”4”, serie “123”, cliente_id “1“, municipio “VALLEDUPAR”, departamento “CESAR”, dirección “CLL38#18d-30”, día “05”, mes “10”, año “2020”.
+     * Un contrato detalle con operación “CARGA”, volumen “8”, tipo “DEFINIDO“ y material_id “1“.
+     * Un contrato vehículo con vehiculo_id “1”
      * Cuando
-     * va a generar un ticket con carga “12”
+     * va a generar un ticket con carga “12” , material_id “1“ y vehiculo_id “1“
      * Entonces
      * El sistema presentará el mensaje. “Atención!, La cantidad de carga ingresada supera el volumen disponible del contrato.”.
      */
 
-    public function testGenerarTicketSinVolumenDisponible(): void {
+    public function testGenerarTicketSinVolumenDisponible(): void
+    {
         $material = new Material(new MaterialId(1), new MaterialNombre('RELLENO'));
         $cliente = new Cliente(new ClienteId(1),new ClienteIdentificacion('1065848333'), new ClienteNombre('CONSTRUCTURA MAYALES'), new ClienteTelefono('3152556478'), new ClienteUbicacion('VALLEDUPAR', 'CESAR', 'CLL38#18D-30'), new ClienteTipo('JURIDICA'));
         $conductor = new Conductor(new ConductorId(1),new ConductorIdentificacion('123456'), new ConductorNombre('FABIAN'), new CondutorTelefono('3005228888'));
@@ -66,10 +68,13 @@ class TicketTest extends TestCase
         $contrato->addDetalle(new TerminoValueObject(8, 'DEFINIDO'),new TransaccionValueObject('CARGA'),$material);
         $contrato->addVechiculo($vehiculo);
         try {
-          $contrato->addTicket($vehiculo->getId(), $material->getId(),new TicketCarga(12));
-        }catch (VolumenDisponibleExeption $exception){
+            $contrato->addTicket($vehiculo->getId(), $material->getId(), new TicketCarga(12));
+        } catch (VolumenDisponibleExeption $exception) {
             $this->assertEquals('Atención!, La cantidad de carga ingresada supera el volumen disponible del contrato.', $exception->getMessage());
         }
     }
+
+
+
 
 }
