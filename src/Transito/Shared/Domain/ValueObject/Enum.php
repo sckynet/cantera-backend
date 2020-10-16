@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace CodelyTv\Shared\Domain\ValueObject;
+namespace Cantera\Transito\Shared\Domain\ValueObject;
 
-use Transito\Shared\Domain\Utils;
+use Cantera\Transito\Shared\Domain\Utils;
 use ReflectionClass;
 use function Lambdish\Phunctional\reindex;
 

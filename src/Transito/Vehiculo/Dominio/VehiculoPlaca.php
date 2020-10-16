@@ -2,6 +2,6 @@
 
 namespace Cantera\Transito\Vehiculo\Dominio;
 
-use Cantera\Transito\Shared\Domain\ValueObject\Uuid;
+use Cantera\Transito\Shared\Domain\ValueObject\StringValueObject;
 
-class VehiculoPlaca extends Uuid{}
+class VehiculoPlaca extends StringValueObject {}

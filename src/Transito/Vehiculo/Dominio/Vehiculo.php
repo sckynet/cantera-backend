@@ -8,19 +8,28 @@ use Cantera\Transito\Conductor\Dominio\ConductorId;
 
 class Vehiculo
 {
+    private $id;
     private $placa;
     private $capacidad;
     private $tipo;
     private $conductorId;
 
-    public function __construct(VehiculoPlaca $placa,VehiculoCapacidad $capacidad, VehiculoTipo $tipo,ConductorId $conductorId)
+    public function __construct(VehiculoId $id,VehiculoPlaca $placa,VehiculoCapacidad $capacidad, VehiculoTipo $tipo,ConductorId $conductorId)
     {
         $this->placa = $placa;
         $this->capacidad = $capacidad;
         $this->tipo = $tipo;
         $this->conductorId = $conductorId;
+        $this->id = $id;
     }
 
+    /**
+     * @return VehiculoId
+     */
+    public function getId(): VehiculoId
+    {
+        return $this->id;
+    }
 
     public function getPlaca(): VehiculoPlaca {
         return $this->placa;

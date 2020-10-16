@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Transito\Shared\Domain;
+namespace Cantera\Transito\Shared\Domain;
 
 use DateTimeImmutable;
 use DateTimeInterface;
