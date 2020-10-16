@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Cantera\Transito\Vehiculo\Dominio;
 
+use Cantera\Transito\Conductor\Dominio\Conductor;
+
 class Vehiculo
 {
     private $placa;
@@ -35,7 +37,7 @@ class Vehiculo
         return $this->tipo;
     }
 
-    public function asignarCondctor(){
+    public function asignarCondctor(Conductor $conductor){
 
     }
 
