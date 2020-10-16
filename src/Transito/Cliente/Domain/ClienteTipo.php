@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Cantera\Transito\Cliente\Domain;
 
-use CodelyTv\Shared\Domain\ValueObject\Enum;
+use Cantera\Transito\Shared\Domain\ValueObject\Enum;
 
 class ClienteTipo extends  Enum {
 

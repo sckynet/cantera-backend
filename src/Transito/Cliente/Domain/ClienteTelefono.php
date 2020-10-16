@@ -15,8 +15,8 @@ class ClienteTelefono extends  StringValueObject
   }
 
   private function ensureIsValidTelefono(string $value) : void {
-     if(!preg_match('/^[0-9]{9,9}$/', $value))
-         throw new InvalidArgumentException(sprintf('<%s> does not allow the value <%s>.', static::class, $value));
+     if(!is_numeric($value))
+         throw new  \DomainException(sprintf('<%s> does not allow the value <%s>.', static::class, $value));
   }
 
 }
