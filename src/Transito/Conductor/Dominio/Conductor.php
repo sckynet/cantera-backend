@@ -12,9 +12,9 @@ class Conductor
 
     /**
      * Conductor constructor.
-     * @param string $id
-     * @param string $nombre
-     * @param string $telefono
+     * @param ConductorId $id
+     * @param ConductorNombre $nombre
+     * @param CondutorTelefono $telefono
      */
     public function __construct(string $id, string $nombre, string $telefono) {
         $this->id = $id;
