@@ -99,6 +99,9 @@ class Contrato
 
     public function addTicket(VehiculoId $vehiculo,MaterialId $materialId,TicketCarga $carga){
 
+        if(!$this->existeVehiculo($vehiculo))
+            throw new VehiculoSinContratoException('Atención!, No se puede genera un ticket porque el vehículo no tiene contrato asociado.');
+
         if(!$this->tieneCantidadPendiente($materialId,$carga,TransaccionValueObject::isCarga()))
             throw  new VolumenDisponibleExeption('Atención!, La cantidad de carga ingresada supera el volumen disponible del contrato.');
 
@@ -112,6 +115,15 @@ class Contrato
         });
 
         return $detalle->getTermino()->getVolumen() > $carga->value();
+    }
+
+    private function existeVehiculo(VehiculoId $vehiculo)
+    {
+        $vehiculo = $this->vehiculos->search(function(Vehiculo $item) use ($vehiculo){
+            return $item->getId()->equals($vehiculo);
+        });
+
+        return $vehiculo !== null;
     }
 
 }

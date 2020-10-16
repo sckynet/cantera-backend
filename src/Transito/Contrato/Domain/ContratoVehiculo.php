@@ -19,4 +19,14 @@ class ContratoVehiculo extends Collection
     public function add(Vehiculo $vehiculo) :self {
         return new self(array_merge($this->items(),[$vehiculo]));
     }
+
+    public function search(callable $fn) : ?Vehiculo{
+
+        foreach ($this->items() as $item){
+            if($fn($item))
+                return $item;
+        }
+
+        return null;
+    }
 }
