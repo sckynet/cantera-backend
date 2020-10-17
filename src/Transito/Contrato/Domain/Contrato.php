@@ -121,27 +121,11 @@ class Contrato
 
         $material = $detalle->getMaterial();
 
-        $ticket = new Ticket(new TicketId(rand(1, 1000)), $this->serie, $vehiculo->getPlaca(), $carga, $material->getNombre(), $vehiculo->getConductor()->getNombre());
+        $ticket = new Ticket(new TicketId(rand(1, 1000)), $this->serie, $vehiculo->getPlaca(), $carga, $material->getNombre(), $vehiculo->getConductor()->getNombre(),TicketEstado::isPendiente());
         $volumenPendiente = $detalle->getTermino()->getVolumen() - $ticket->getCarga()->value();
         $message = "Se ha generado un ticket con serie:" . $ticket->getSerie()->value() . " placa:" . $ticket->getPlaca()->value() . " carga:" . $ticket->getCarga()->value() . " material:" . $ticket->getMaterialNombre()->value() . " nombre del conductor:" . $ticket->getConductorNombre()->value() . " volumen pendiente:" . $volumenPendiente.".";
         return $message;
         //return sprintf("Se ha generado un ticket con serie:s% placa:s% carga:s% material:s% nombre del conductor:s% volumen pendiente:s%.", $ticket->getSerie()->value(),$ticket->getCarga()->value(), $ticket->getPlaca()->value(), $ticket->getMaterialNombre()->value(), $ticket->getConductorNombre()->value(),$volumenPendiente);
-    }
-
-    private function getVehiculo(VehiculoId $vehiculoId): Vehiculo
-    {
-        $vehiculo = $this->vehiculos->search(function (Vehiculo $item) use ($vehiculoId) {
-            return $item->getId()->equals($vehiculoId);
-        });
-        return $vehiculo;
-    }
-
-    private function getMaterial(MaterialId $materialId): Detalle
-    {
-        $detalle = $this->detalles->search(function (Detalle $item) use ($materialId) {
-            return $item->getMaterial()->getId()->equals($materialId);
-        });
-        return $detalle->getMaterial();
     }
 
     private function tieneCantidadPendiente(MaterialId $materialId, TicketCarga $carga, TransaccionValueObject $operacion): Detalle
@@ -150,7 +134,6 @@ class Contrato
             return $item->getMaterial()->getId()->equals($materialId) && $item->getTransaccion()->equals($operacion);
         });
         return $detalle;
-        //return $detalle->getTermino()->getVolumen() >= $carga->value();
     }
 
     private function tipoTransaccion(MaterialId $materialId, TransaccionValueObject $operacion)
@@ -166,11 +149,7 @@ class Contrato
         $vehiculo = $this->vehiculos->search(function (Vehiculo $item) use ($vehiculoId) {
             return $item->getId()->equals($vehiculoId);
         });
-//        $vehiculo = $this->vehiculos->search(function (Vehiculo $item) use ($vehiculo) {
-//            return $item->getId()->equals($vehiculo);
-//        });
         return $vehiculo;
-        //return $vehiculo !== null;
     }
 
 }

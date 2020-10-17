@@ -8,27 +8,31 @@ use Cantera\Transito\Vehiculo\Dominio\VehiculoPlaca;
 
 class Ticket
 {
-   private $id;
-   private $serie;
-   private $placa;
-   private $carga;
-   private $materialNombre;
-   private $conductorNombre;
+    private $id;
+    private $serie;
+    private $placa;
+    private $carga;
+    private $materialNombre;
+    private $conductorNombre;
+    private $estado;
 
     /**
      * Ticket constructor.
-     * @param $id
-     * @param $serie
-     * @param $placa
-     * @param $carga
-     * @param $material
+     * @param TicketId $id
+     * @param ContratoSerie $serie
+     * @param VehiculoPlaca $placa
+     * @param TicketCarga $carga
+     * @param MaterialNombre $materialNombre
+     * @param ConductorNombre $conductorNombre
+     * @param TicketEstado $estado
      */
-    public function __construct(TicketId $id,ContratoSerie $serie,VehiculoPlaca $placa,TicketCarga $carga,MaterialNombre $materialNombre,ConductorNombre  $conductorNombre)
+    public function __construct(TicketId $id, ContratoSerie $serie, VehiculoPlaca $placa, TicketCarga $carga, MaterialNombre $materialNombre, ConductorNombre $conductorNombre, TicketEstado $estado)
     {
         $this->id = $id;
         $this->serie = $serie;
         $this->placa = $placa;
         $this->carga = $carga;
+        $this->estado = $estado;
         $this->materialNombre = $materialNombre;
         $this->conductorNombre = $conductorNombre;
     }
@@ -81,6 +85,21 @@ class Ticket
         return $this->conductorNombre;
     }
 
+    /**
+     * @return TicketEstado
+     */
+    public function getEstado(): TicketEstado
+    {
+        return $this->estado;
+    }
+
+    /**
+     * @param TicketEstado $estado
+     */
+    public function setEstado(TicketEstado $estado): void
+    {
+        $this->estado = $estado;
+    }
 
 
 }
