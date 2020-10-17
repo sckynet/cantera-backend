@@ -7,6 +7,7 @@ use Cantera\Transito\Material\Domain\Material;
 use Cantera\Transito\Material\Domain\MaterialId;
 use Cantera\Transito\Vehiculo\Dominio\Vehiculo;
 use Cantera\Transito\Vehiculo\Dominio\VehiculoId;
+use Cantera\Transito\Vehiculo\Dominio\VehiculoPlaca;
 
 class Contrato
 {
@@ -17,6 +18,7 @@ class Contrato
     private $detalles;
     private $vehiculos;
     private $clienteId;
+    private $tickets;
 
     /**
      * Contrato constructor.
@@ -34,6 +36,15 @@ class Contrato
         $this->clienteId = $clienteId;
         $this->detalles = new ContratoDetalle([]);
         $this->vehiculos = new ContratoVehiculo([]);
+        $this->tickets = new ContratoTickets([]);
+    }
+
+    /**
+     * @return ContratoTickets
+     */
+    public function getTickets(): ContratoTickets
+    {
+        return $this->tickets;
     }
 
     /**
@@ -51,13 +62,6 @@ class Contrato
     public function getDetalles(): ContratoDetalle
     {
         return $this->detalles;
-    }
-
-
-    public function addDetalle(TerminoValueObject $termino, TransaccionValueObject $transaccion, Material $material)
-    {
-        $detalle = new Detalle($material, $termino, $transaccion);
-        $this->detalles = $this->detalles->add($detalle);
     }
 
     /**
@@ -100,9 +104,20 @@ class Contrato
         return $this->vehiculos;
     }
 
+
+    public function addDetalle(TerminoValueObject $termino, TransaccionValueObject $transaccion, Material $material): void
+    {
+        $detalle = new Detalle($material, $termino, $transaccion);
+        $this->detalles = $this->detalles->add($detalle);
+    }
+
     public function addVechiculo(Vehiculo $vehiculo): void
     {
         $this->vehiculos = $this->vehiculos->add($vehiculo);
+    }
+
+    private function addContratoTickets(Ticket $ticket):void{
+        $this->tickets = $this->tickets->add($ticket);
     }
 
     public function addTicket(VehiculoId $vehiculoId, MaterialId $materialId, TicketCarga $carga)
@@ -121,13 +136,23 @@ class Contrato
 
         $material = $detalle->getMaterial();
 
-        $ticket = new Ticket(new TicketId(rand(1, 1000)), $this->serie, $vehiculo->getPlaca(), $carga, $material->getNombre(), $vehiculo->getConductor()->getNombre(),TicketEstado::isPendiente());
+        if(!$this->tieneTicketPendienteVehiculo($vehiculo->getPlaca()))
+            throw new TicketPendienteExeption('Atencion!, El vehiculo ya tiene un ticket pendiente, debe finalizar el ticket pendiente.');
+
+        $ticket = new Ticket(new TicketId(rand(1, 1000)), $this->serie, $vehiculo->getPlaca(), $carga, $material->getNombre(), $vehiculo->getConductor()->getNombre(), TicketEstado::isPendiente());
+        $this->addContratoTickets($ticket);
         $volumenPendiente = $detalle->getTermino()->getVolumen() - $ticket->getCarga()->value();
-        $message = "Se ha generado un ticket con serie:" . $ticket->getSerie()->value() . " placa:" . $ticket->getPlaca()->value() . " carga:" . $ticket->getCarga()->value() . " material:" . $ticket->getMaterialNombre()->value() . " nombre del conductor:" . $ticket->getConductorNombre()->value() . " volumen pendiente:" . $volumenPendiente.".";
+        $message = "Se ha generado un ticket con serie:" . $ticket->getSerie()->value() . " placa:" . $ticket->getPlaca()->value() . " carga:" . $ticket->getCarga()->value() . " material:" . $ticket->getMaterialNombre()->value() . " nombre del conductor:" . $ticket->getConductorNombre()->value() . " volumen pendiente:" . $volumenPendiente . ".";
         return $message;
         //return sprintf("Se ha generado un ticket con serie:s% placa:s% carga:s% material:s% nombre del conductor:s% volumen pendiente:s%.", $ticket->getSerie()->value(),$ticket->getCarga()->value(), $ticket->getPlaca()->value(), $ticket->getMaterialNombre()->value(), $ticket->getConductorNombre()->value(),$volumenPendiente);
     }
 
+    private function tieneTicketPendienteVehiculo(VehiculoPlaca $vehiculoPlaca){
+        $ticket = $this->tickets->search(function (Ticket $item) use($vehiculoPlaca){
+            return $item->getPlaca() === $vehiculoPlaca and $item->getEstado()->equals(TicketEstado::isPendiente());
+        });
+        return $ticket == null;
+    }
     private function tieneCantidadPendiente(MaterialId $materialId, TicketCarga $carga, TransaccionValueObject $operacion): Detalle
     {
         $detalle = $this->detalles->search(function (Detalle $item) use ($materialId, $operacion) {

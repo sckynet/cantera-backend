@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="testGenerarTicketCorrectamente TicketTest.php Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketEstado.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoTickets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketPendienteExeption.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Ticket.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +237,7 @@
       <workItem from="1602853046822" duration="1192000" />
       <workItem from="1602854454085" duration="343000" />
       <workItem from="1602881720135" duration="3744000" />
-      <workItem from="1602935984970" duration="13086000" />
+      <workItem from="1602935984970" duration="16347000" />
     </task>
     <task id="LOCAL-00001" summary="primera prueba jordan">
       <created>1602816798954</created>
@@ -302,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602948583024</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="testGenerarTicketCorrectamente TicketTest.php Jordan">
+      <created>1602950364280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602950364280</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,10 +344,10 @@
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="259" y="87" width="1081" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602857806323" />
-    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1602949491243">
+    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1602951512619">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602949491243" />
+    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602951512619" />
     <state x="499" y="191" key="FileChooserDialogImpl" timestamp="1602948060974">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -354,19 +361,19 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602887434433" />
-    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602949472803">
+    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602953049047">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602949472803" />
+    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602953049047" />
     <state x="184" y="44" key="SettingsEditor" timestamp="1602888516347">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="216" y="16" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858107581" />
     <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602888516347" />
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602948617468">
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602950385029">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602948617468" />
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602950385029" />
     <state x="555" y="243" key="cloudConfig.SelfSettingsDialog" timestamp="1602854491198">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
