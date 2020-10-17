@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="TicketTest.php Jordan">
+      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TipoTransaccionExeption.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TransaccionValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TransaccionValueObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/Uuid.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/Uuid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +41,32 @@
     <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -157,7 +189,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Transito/Shared/Domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Inventario" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,7 +197,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -178,15 +210,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -208,7 +238,8 @@
       <workItem from="1602796084372" duration="5452000" />
       <workItem from="1602853046822" duration="1192000" />
       <workItem from="1602854454085" duration="343000" />
-      <workItem from="1602881720135" duration="2450000" />
+      <workItem from="1602881720135" duration="3744000" />
+      <workItem from="1602935984970" duration="11451000" />
     </task>
     <task id="LOCAL-00001" summary="primera prueba jordan">
       <created>1602816798954</created>
@@ -259,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602883519334</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="TicketTest.php Jordan">
+      <created>1602887387732</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602887387732</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,34 +335,43 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="488" y="115" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602862837230" />
-    <state x="584" y="187" key="FileChooserDialogImpl" timestamp="1602858732513">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="499" y="191" key="FileChooserDialogImpl" timestamp="1602948060974">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="584" y="187" key="FileChooserDialogImpl/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858732513" />
-    <state x="129" y="86" key="MergeDialog" timestamp="1602817037478">
+    <state x="499" y="191" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1602948060974" />
+    <state x="129" y="86" key="MergeDialog" timestamp="1602887434422">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="129" y="86" key="MergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602817037478" />
-    <state x="313" y="153" key="MultipleFileMergeDialog" timestamp="1602883257639">
+    <state x="129" y="86" key="MergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602887434422" />
+    <state x="313" y="153" key="MultipleFileMergeDialog" timestamp="1602887434433">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602883257639" />
-    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602863153909">
+    <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602887434433" />
+    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1602938485398">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602863153909" />
-    <state x="216" y="16" key="SettingsEditor" timestamp="1602858107581">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602938485398" />
+    <state x="184" y="44" key="SettingsEditor" timestamp="1602888516347">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="216" y="16" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858107581" />
-    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602854764360" />
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602883544634">
+    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602888516347" />
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602936220115">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602883544634" />
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602936220115" />
     <state x="555" y="243" key="cloudConfig.SelfSettingsDialog" timestamp="1602854491198">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="555" y="243" key="cloudConfig.SelfSettingsDialog/0.30.1366.738@0.30.1366.738" timestamp="1602854491198" />
+    <state x="500" y="309" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602936040946">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="500" y="309" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1366.738@0.30.1366.738" timestamp="1602936040946" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602946084244">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1602946084244" />
   </component>
 </project>

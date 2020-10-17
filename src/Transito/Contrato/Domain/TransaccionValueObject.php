@@ -18,7 +18,13 @@ class TransaccionValueObject extends Enum
         throw new InvalidArgumentException(sprintf('The type selected <%s> is invalid', $value));
     }
 
-    public static function isCarga() : self {
+    public static function isCarga(): self
+    {
         return new self(static::CARGA);
+    }
+
+    public function isDescarga(): self
+    {
+        return new self(static::DESCARGA);
     }
 }

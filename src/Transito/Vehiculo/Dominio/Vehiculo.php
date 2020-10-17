@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Cantera\Transito\Vehiculo\Dominio;
 
+use Cantera\Transito\Conductor\Dominio\Conductor;
 use Cantera\Transito\Conductor\Dominio\ConductorId;
 
 class Vehiculo
@@ -12,14 +13,14 @@ class Vehiculo
     private $placa;
     private $capacidad;
     private $tipo;
-    private $conductorId;
+    private $conductor;
 
-    public function __construct(VehiculoId $id,VehiculoPlaca $placa,VehiculoCapacidad $capacidad, VehiculoTipo $tipo,ConductorId $conductorId)
+    public function __construct(VehiculoId $id, VehiculoPlaca $placa, VehiculoCapacidad $capacidad, VehiculoTipo $tipo, Conductor $conductor)
     {
         $this->placa = $placa;
         $this->capacidad = $capacidad;
         $this->tipo = $tipo;
-        $this->conductorId = $conductorId;
+        $this->conductor = $conductor;
         $this->id = $id;
     }
 
@@ -31,7 +32,8 @@ class Vehiculo
         return $this->id;
     }
 
-    public function getPlaca(): VehiculoPlaca {
+    public function getPlaca(): VehiculoPlaca
+    {
         return $this->placa;
     }
 
@@ -47,10 +49,12 @@ class Vehiculo
         return $this->tipo;
     }
 
-
-    public function conductor(): ConductorId
+    /**
+     * @return Conductor
+     */
+    public function getConductor(): Conductor
     {
-        return $this->conductorId;
+        return $this->conductor;
     }
 
 }

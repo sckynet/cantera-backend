@@ -25,7 +25,7 @@ class Contrato
      * @param ContratoUbicacion $ubicacion ;
      * @param ContratoFecha $fecha ;
      */
-    public function __construct(ContratoId $id, ContratoSerie $serie, ContratoUbicacion $ubicacion, ContratoFecha $fecha,ClienteId $clienteId)
+    public function __construct(ContratoId $id, ContratoSerie $serie, ContratoUbicacion $ubicacion, ContratoFecha $fecha, ClienteId $clienteId)
     {
         $this->id = $id;
         $this->serie = $serie;
@@ -45,7 +45,6 @@ class Contrato
     }
 
 
-
     /**
      * @return ContratoDetalle
      */
@@ -55,8 +54,9 @@ class Contrato
     }
 
 
-    public function addDetalle(TerminoValueObject $termino, TransaccionValueObject $transaccion, Material $material){
-        $detalle = new Detalle($material,$termino, $transaccion);
+    public function addDetalle(TerminoValueObject $termino, TransaccionValueObject $transaccion, Material $material)
+    {
+        $detalle = new Detalle($material, $termino, $transaccion);
         $this->detalles = $this->detalles->add($detalle);
     }
 
@@ -92,38 +92,85 @@ class Contrato
         return $this->fecha;
     }
 
-    public function addVechiculo(Vehiculo $vehiculo) : void
+    /**
+     * @return ContratoVehiculo
+     */
+    public function getVehiculos(): ContratoVehiculo
+    {
+        return $this->vehiculos;
+    }
+
+    public function addVechiculo(Vehiculo $vehiculo): void
     {
         $this->vehiculos = $this->vehiculos->add($vehiculo);
     }
 
-    public function addTicket(VehiculoId $vehiculo,MaterialId $materialId,TicketCarga $carga){
+    public function addTicket(VehiculoId $vehiculoId, MaterialId $materialId, TicketCarga $carga)
+    {
 
-        if(!$this->existeVehiculo($vehiculo))
+        $vehiculo = $this->existeVehiculo($vehiculoId);
+        if ($vehiculo == null)
             throw new VehiculoSinContratoException('Atención!, No se puede genera un ticket porque el vehículo no tiene contrato asociado.');
 
-        if(!$this->tieneCantidadPendiente($materialId,$carga,TransaccionValueObject::isCarga()))
+        if ($this->tipoTransaccion($materialId, TransaccionValueObject::isDescarga()))
+            throw new TipoTransaccionExeption('Atención!, No se puede generar un ticket un para el tipo de transacción DESCARGA.');
+
+        $detalle = $this->tieneCantidadPendiente($materialId, $carga, TransaccionValueObject::isCarga());
+        if ($detalle->getTermino()->getVolumen() < $carga->value())
             throw  new VolumenDisponibleExeption('Atención!, La cantidad de carga ingresada supera el volumen disponible del contrato.');
 
-        //$ticket = new Ticket(new TicketId(TicketId::random()),$this->serie,$this->);
+        $material = $detalle->getMaterial();
+
+        $ticket = new Ticket(new TicketId(rand(1, 1000)), $this->serie, $vehiculo->getPlaca(), $carga, $material->getNombre(), $vehiculo->getConductor()->getNombre());
+        $volumenPendiente = $detalle->getTermino()->getVolumen() - $ticket->getCarga()->value();
+        $message = "Se ha generado un ticket con serie:" . $ticket->getSerie()->value() . " placa:" . $ticket->getPlaca()->value() . " carga:" . $ticket->getCarga()->value() . " material:" . $ticket->getMaterialNombre()->value() . " nombre del conductor:" . $ticket->getConductorNombre()->value() . " volumen pendiente:" . $volumenPendiente.".";
+        return $message;
+        //return sprintf("Se ha generado un ticket con serie:s% placa:s% carga:s% material:s% nombre del conductor:s% volumen pendiente:s%.", $ticket->getSerie()->value(),$ticket->getCarga()->value(), $ticket->getPlaca()->value(), $ticket->getMaterialNombre()->value(), $ticket->getConductorNombre()->value(),$volumenPendiente);
     }
 
-    private function tieneCantidadPendiente(MaterialId $materialId,TicketCarga $carga, TransaccionValueObject $operacion) : bool {
-
-        $detalle = $this->detalles->search(function(Detalle $item) use ($materialId,$operacion){
-            return $item->getMaterial()->getId()->equals($materialId)  && $item->getTransaccion()->equals($operacion);
-        });
-
-        return $detalle->getTermino()->getVolumen() > $carga->value();
-    }
-
-    private function existeVehiculo(VehiculoId $vehiculo)
+    private function getVehiculo(VehiculoId $vehiculoId): Vehiculo
     {
-        $vehiculo = $this->vehiculos->search(function(Vehiculo $item) use ($vehiculo){
-            return $item->getId()->equals($vehiculo);
+        $vehiculo = $this->vehiculos->search(function (Vehiculo $item) use ($vehiculoId) {
+            return $item->getId()->equals($vehiculoId);
         });
+        return $vehiculo;
+    }
 
-        return $vehiculo !== null;
+    private function getMaterial(MaterialId $materialId): Detalle
+    {
+        $detalle = $this->detalles->search(function (Detalle $item) use ($materialId) {
+            return $item->getMaterial()->getId()->equals($materialId);
+        });
+        return $detalle->getMaterial();
+    }
+
+    private function tieneCantidadPendiente(MaterialId $materialId, TicketCarga $carga, TransaccionValueObject $operacion): Detalle
+    {
+        $detalle = $this->detalles->search(function (Detalle $item) use ($materialId, $operacion) {
+            return $item->getMaterial()->getId()->equals($materialId) && $item->getTransaccion()->equals($operacion);
+        });
+        return $detalle;
+        //return $detalle->getTermino()->getVolumen() >= $carga->value();
+    }
+
+    private function tipoTransaccion(MaterialId $materialId, TransaccionValueObject $operacion)
+    {
+        $detalle = $this->detalles->search(function (Detalle $item) use ($materialId, $operacion) {
+            return $item->getMaterial()->getId()->equals($materialId) && $item->getTransaccion()->equals($operacion);
+        });
+        return $detalle !== null;
+    }
+
+    private function existeVehiculo(VehiculoId $vehiculoId): ?Vehiculo
+    {
+        $vehiculo = $this->vehiculos->search(function (Vehiculo $item) use ($vehiculoId) {
+            return $item->getId()->equals($vehiculoId);
+        });
+//        $vehiculo = $this->vehiculos->search(function (Vehiculo $item) use ($vehiculo) {
+//            return $item->getId()->equals($vehiculo);
+//        });
+        return $vehiculo;
+        //return $vehiculo !== null;
     }
 
 }
