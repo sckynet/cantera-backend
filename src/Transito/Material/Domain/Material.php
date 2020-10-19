@@ -16,11 +16,11 @@ class Material
             $this->nombre = $nombre;
     }
 
-    public function  id() : MaterialId {
+    public function  getId() : MaterialId {
         return $this->id;
     }
 
-    public function nombre() : MaterialNombre {
+    public function getNombre() : MaterialNombre {
         return $this->nombre;
     }
 
