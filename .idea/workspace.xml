@@ -20,20 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Conductor Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Shared/Domain/Utils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Contrato.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/cliente/domain/ClienteUbicacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +31,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -165,7 +157,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Transito/Shared/Domain" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -181,13 +173,28 @@
       <recent name="$PROJECT_DIR$/src/Transito/Shared/Domain" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="" />
@@ -199,6 +206,8 @@
       <workItem from="1602796084372" duration="5452000" />
       <workItem from="1602853046822" duration="1192000" />
       <workItem from="1602854454085" duration="343000" />
+      <workItem from="1602862412680" duration="2447000" />
+      <workItem from="1603147780792" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="primera prueba jordan">
       <created>1602816798954</created>
@@ -218,19 +227,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primera prueba jordan" />
