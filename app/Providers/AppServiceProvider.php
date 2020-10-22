@@ -2,25 +2,21 @@
 
 namespace App\Providers;
 
+use Cantera\Transito\Material\Dominio\IMaterialRepository;
+use Cantera\Transito\Material\Infraestructura\MaterialEloquentRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
+
     public function register()
     {
-        //
+        $this->app->bind(
+            IMaterialRepository::class,
+            MaterialEloquentRepository::class
+        );
     }
 
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
     public function boot()
     {
         //

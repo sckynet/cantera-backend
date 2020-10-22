@@ -2,6 +2,6 @@
 
 namespace Cantera\Transito\Vehiculo\Dominio;
 
-use Cantera\Transito\Shared\Domain\ValueObject\StringValueObject;
+use Cantera\Transito\Shared\Dominio\ValueObject\StringValueObject;
 
 class VehiculoTipo extends StringValueObject{}
