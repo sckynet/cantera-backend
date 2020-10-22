@@ -19,11 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="testGenerarTicketCorrectamente TicketTest.php Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoTickets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketPendienteExeption.php" afterDir="false" />
+    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="testGenerarTicketCorrectamente 1.3. debe haber máximo un ticket pendiente por vehículo  TicketTest.php Jordan">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +183,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Inventario" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -237,7 +234,10 @@
       <workItem from="1602853046822" duration="1192000" />
       <workItem from="1602854454085" duration="343000" />
       <workItem from="1602881720135" duration="3744000" />
-      <workItem from="1602935984970" duration="16347000" />
+      <workItem from="1602935984970" duration="16596000" />
+      <workItem from="1603134991078" duration="2939000" />
+      <workItem from="1603343203566" duration="14000" />
+      <workItem from="1603349760607" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="primera prueba jordan">
       <created>1602816798954</created>
@@ -309,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602950364280</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="testGenerarTicketCorrectamente 1.3. debe haber máximo un ticket pendiente por vehículo  TicketTest.php Jordan">
+      <created>1602953821116</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602953821116</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +340,8 @@
     <MESSAGE value="Contrato.php Jordan" />
     <MESSAGE value="TicketTest.php Jordan" />
     <MESSAGE value="testGenerarTicketCorrectamente TicketTest.php Jordan" />
-    <option name="LAST_COMMIT_MESSAGE" value="testGenerarTicketCorrectamente TicketTest.php Jordan" />
+    <MESSAGE value="testGenerarTicketCorrectamente 1.3. debe haber máximo un ticket pendiente por vehículo  TicketTest.php Jordan" />
+    <option name="LAST_COMMIT_MESSAGE" value="testGenerarTicketCorrectamente 1.3. debe haber máximo un ticket pendiente por vehículo  TicketTest.php Jordan" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="219" key="#Notifications" timestamp="1602854012530">
@@ -348,11 +356,11 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602951512619" />
-    <state x="499" y="191" key="FileChooserDialogImpl" timestamp="1602948060974">
+    <state x="499" y="191" key="FileChooserDialogImpl" timestamp="1603192148405">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="584" y="187" key="FileChooserDialogImpl/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858732513" />
-    <state x="499" y="191" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1602948060974" />
+    <state x="499" y="191" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1603192148405" />
     <state x="129" y="86" key="MergeDialog" timestamp="1602887434422">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -370,10 +378,10 @@
     </state>
     <state x="216" y="16" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602858107581" />
     <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602888516347" />
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602950385029">
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602953838288">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602950385029" />
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602953838288" />
     <state x="555" y="243" key="cloudConfig.SelfSettingsDialog" timestamp="1602854491198">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
