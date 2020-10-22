@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Cantera\Transito\Vehiculo\Dominio;
 
 use Cantera\Transito\Conductor\Dominio\Conductor;
-use Cantera\Transito\Conductor\Dominio\ConductorId;
 
 class Vehiculo
 {
@@ -24,9 +23,6 @@ class Vehiculo
         $this->id = $id;
     }
 
-    /**
-     * @return VehiculoId
-     */
     public function getId(): VehiculoId
     {
         return $this->id;
@@ -37,21 +33,16 @@ class Vehiculo
         return $this->placa;
     }
 
-
     public function getCapacidad(): VehiculoCapacidad
     {
         return $this->capacidad;
     }
-
 
     public function getTipo(): VehiculoTipo
     {
         return $this->tipo;
     }
 
-    /**
-     * @return Conductor
-     */
     public function getConductor(): Conductor
     {
         return $this->conductor;
