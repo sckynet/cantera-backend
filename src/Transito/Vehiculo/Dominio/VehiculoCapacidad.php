@@ -3,7 +3,7 @@
 
 namespace Cantera\Transito\Vehiculo\Dominio;
 
-use Cantera\Transito\Shared\Domain\ValueObject\IntValueObject;
+use Cantera\Transito\Shared\Dominio\ValueObject\IntValueObject;
 
 class VehiculoCapacidad extends IntValueObject
 {
