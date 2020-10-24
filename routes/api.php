@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/material','Material\MaterialPostController@guardar');
+Route::post('/conductor','Conductor\ConductorPostController@guardar');
