@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/material','Material\MaterialPostController@guardar');
 Route::post('/cliente','Cliente\ClientePostController@guardar');
-
+Route::post('/conductor','Conductor\ConductorPostController@guardar');
+Route::post('/vehiculo', 'Vehiculo\VehiculoPostController@guardar');
