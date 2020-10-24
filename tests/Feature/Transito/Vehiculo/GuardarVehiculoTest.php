@@ -3,11 +3,13 @@
 
 namespace Tests\Feature\Transito\Vehiculo;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Response;
 use Tests\TestCase;
 
 class GuardarVehiculoTest extends TestCase
 {
+    use RefreshDatabase;
     public function testGuardarVehiculoCorrectamente(): void
     {
         $response = $this->post('/api/vehiculo', [

@@ -22,18 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Jordan">
-      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/GuardarVehiculoResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/GuardarVehiculoService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/VehiculoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/IVehiculoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Infraestructura/Persistencia/Eloquent/VehiculoModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Infraestructura/Persistencia/VehiculoEloquentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Transito/Vehiculo/GuardarVehiculoTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Transito/Vehiculo/Aplicacion/GuardarVehiculoServiceTest.php" afterDir="false" />
+    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="GuardarVehiculoTest.php Jordan Cuadro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Material/MaterialPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Material/MaterialPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/GuardarVehiculoService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/GuardarVehiculoService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Transito/Vehiculo/GuardarVehiculoTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Transito/Vehiculo/GuardarVehiculoTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +270,7 @@
       <workItem from="1603329347380" duration="16900000" />
       <workItem from="1603374605266" duration="3869000" />
       <workItem from="1603481903004" duration="79000" />
-      <workItem from="1603566198362" duration="8561000" />
+      <workItem from="1603566198362" duration="11918000" />
     </task>
     <task id="LOCAL-00001" summary="primera prueba jordan">
       <created>1602816798954</created>
@@ -349,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602950364280</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="GuardarVehiculoTest.php Jordan Cuadro">
+      <created>1603577043790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603577043790</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +373,8 @@
     <MESSAGE value="Contrato.php Jordan" />
     <MESSAGE value="TicketTest.php Jordan" />
     <MESSAGE value="testGenerarTicketCorrectamente TicketTest.php Jordan" />
-    <option name="LAST_COMMIT_MESSAGE" value="testGenerarTicketCorrectamente TicketTest.php Jordan" />
+    <MESSAGE value="GuardarVehiculoTest.php Jordan Cuadro" />
+    <option name="LAST_COMMIT_MESSAGE" value="GuardarVehiculoTest.php Jordan Cuadro" />
   </component>
   <component name="WindowStateProjectService">
     <state x="436" y="219" key="#Notifications" timestamp="1602854012530">
@@ -405,10 +406,10 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="476" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1366.738@0.30.1366.738" timestamp="1603574208912" />
-    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603576872368">
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603579085176">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1603576872368" />
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1603579085176" />
     <state x="499" y="191" key="FileChooserDialogImpl" timestamp="1603481976355">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -423,11 +424,11 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602887434433" />
-    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1603576888460">
+    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1603579040523">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="664" y="144" key="NewPhpClassDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603347579554" />
-    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1603576888460" />
+    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1603579040523" />
     <state x="184" y="44" width="908" height="732" key="SettingsEditor" timestamp="1603566811959">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -439,10 +440,10 @@
     </state>
     <state width="584" height="498" key="SwitcherDM/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603348096124" />
     <state width="498" height="447" key="SwitcherDM/0.0.1600.855/1600.66.1366.768@1600.66.1366.768" timestamp="1602988600802" />
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1602950385029">
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603577056570">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1602950385029" />
+    <state x="275" y="128" key="Vcs.Push.Dialog.v2/0.30.1366.738@0.30.1366.738" timestamp="1603577056570" />
     <state x="650" y="247" key="cloudConfig.SelfSettingsDialog" timestamp="1602986239694">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
@@ -464,11 +465,11 @@
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="460" y="192" key="run.anything.popup/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603341840284" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603576692885">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603580079571">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="405" y="67" width="788" height="786" key="search.everywhere.popup/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603345469337" />
     <state x="1946" y="126" width="673" height="707" key="search.everywhere.popup/0.0.1600.855/1600.66.1366.768@1600.66.1366.768" timestamp="1602987662522" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1603576692885" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1603580079571" />
   </component>
 </project>
