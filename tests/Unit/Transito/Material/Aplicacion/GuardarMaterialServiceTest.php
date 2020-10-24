@@ -8,10 +8,13 @@ use Cantera\Transito\Material\Dominio\IMaterialRepository;
 use Cantera\Transito\Material\Dominio\Material;
 use Cantera\Transito\Material\Dominio\MaterialId;
 use Cantera\Transito\Material\Dominio\MaterialNombre;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use PHPUnit\Framework\TestCase;
 
 class GuardarMaterialServiceTest extends TestCase
 {
+
+    use RefreshDatabase;
 
     /**
      * @test

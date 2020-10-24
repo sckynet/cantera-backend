@@ -18,7 +18,8 @@ final class MaterialEloquentRepository implements IMaterialRepository
 
     public function save(Material $material) : void
     {
-        $this->model->fill($material->toArray());
+        //$this->model->fill($material->toArray());
+        $this->model->nombre = $material->getNombre()->value();
         $this->model->save();
     }
 }
