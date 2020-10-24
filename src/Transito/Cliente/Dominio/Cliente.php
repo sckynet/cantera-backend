@@ -9,16 +9,16 @@ use Cantera\Transito\Shared\Dominio\ValueObject\UbicacionValueObject;
 class Cliente
 {
 
-   private $id;
+
    private $identificacion;
    private $nombre;
    private $ubicacion;
    private $telefono;
    private $tipo;
 
-   public function __construct(ClienteId $id,ClienteIdentificacion $identificacion, ClienteNombre $nombre, ClienteTelefono $telefono,ClienteUbicacion $ubicacion,ClienteTipo $tipo)
+   public function __construct(ClienteIdentificacion $identificacion, ClienteNombre $nombre, ClienteTelefono $telefono,ClienteUbicacion $ubicacion,ClienteTipo $tipo)
    {
-            $this->id = $id;
+
             $this->identificacion = $identificacion;
             $this->nombre = $nombre;
             $this->telefono = $telefono;
@@ -70,6 +70,16 @@ class Cliente
         return $this->identificacion;
     }
 
-
+    public function toArray() : array {
+        return [
+            'identificacion' => $this->getIdentificacion()->value(),
+            'nombre' => $this->getNombre()->value(),
+            'telefono' => $this->getTelefono()->value(),
+            'municipio' => $this->getUbicacion()->getMunicipio(),
+            'departamento' => $this->getUbicacion()->getDepartamento(),
+            'direccion' => $this->getUbicacion()->getDireccion(),
+            'tipo' => $this->getTipo()->value(),
+        ];
+    }
 
 }
