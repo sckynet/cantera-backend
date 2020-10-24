@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Material;
 use App\Http\Controllers\Controller;
 use Cantera\Transito\Material\Aplicacion\GuardarMaterialService;
 use Cantera\Transito\Material\Aplicacion\MaterialRequest;
+use Cantera\Transito\Material\Dominio\IMaterialRepository;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

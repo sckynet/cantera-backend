@@ -18,4 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/material','Material\MaterialPostController@guardar');
+Route::post('/material', 'Material\MaterialPostController@guardar');
+
+Route::post('/vehiculo', 'Vehiculo\VehiculoPostController@guardar');

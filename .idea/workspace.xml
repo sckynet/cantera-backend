@@ -22,171 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="testGenerarTicketCorrectamente TicketTest.php Jordan">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Material/MaterialPostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Ticket/GenerarTicketPostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_063039_create_table_materiales.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/ClienteId.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/ClienteIdentificacion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/ClienteNombre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/ClienteUbicacion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoFecha.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoId.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoSerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoUbicacion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TicketCarga.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TicketId.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Aplicacion/GuardarMaterialResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Aplicacion/GuardarMaterialService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Aplicacion/MaterialRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Dominio/IMaterialRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Dominio/MaterialId.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Dominio/MaterialNombre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Infraestructura/Persistencia/Eloquent/MaterialModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transito/Material/Infraestructura/Persistencia/MaterialEloquentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Transito/Material/GuardarMaterialTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Transito/Material/Aplicacion/GuardarMaterialServiceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/Transito/Ticket/Aplicacion/GenerarTicket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cantera.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cantera.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9db1de77-027d-4324-88d1-59099bc5b040" name="Default Changelist" comment="Jordan">
+      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/GuardarVehiculoResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/GuardarVehiculoService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Aplicacion/VehiculoRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/IVehiculoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Infraestructura/Persistencia/Eloquent/VehiculoModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Infraestructura/Persistencia/VehiculoEloquentRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Transito/Vehiculo/GuardarVehiculoTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Transito/Vehiculo/Aplicacion/GuardarVehiculoServiceTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.styleci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/hashing.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/public/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Material/MaterialPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Material/MaterialPostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/Cliente.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteIdentificacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteNombre.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/ClienteTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Cliente/Dominio/ClienteTipo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Cliente/Domain/ClienteUbicacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/Conductor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/ConductorId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/ConductorId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/ConductorIdentificacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/ConductorIdentificacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/ConductorNombre.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/ConductorNombre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Conductor/Dominio/CondutorTelefono.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Contrato.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/Contrato.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoDetalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoDetalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoFecha.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoSerie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoTickets.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoTickets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoUbicacion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/ContratoVehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/ContratoVehiculo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Detalle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/Detalle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TerminoValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TerminoValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/Ticket.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/Ticket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketCarga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketEstado.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TicketEstado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TicketPendienteExeption.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TicketPendienteExeption.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TipoTransaccionExeption.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TipoTransaccionExeption.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/TransaccionValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/TransaccionValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/VehiculoSinContratoException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/VehiculoSinContratoException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Contrato/Domain/VolumenDisponibleExeption.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Contrato/Dominio/VolumenDisponibleExeption.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Material/Domain/Material.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Material/Dominio/Material.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Material/Domain/MaterialId.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Material/Domain/MaterialNombre.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/Assert.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/Assert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/Collection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/Collection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/Utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/Utils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/Enum.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/ValueObject/Enum.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/FechaValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/ValueObject/FechaValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/IntValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/ValueObject/IntValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/StringValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/ValueObject/StringValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/UbicacionValueObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/ValueObject/UbicacionValueObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Shared/Domain/ValueObject/Uuid.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Shared/Dominio/ValueObject/Uuid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/Vehiculo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoCapacidad.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoCapacidad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoPlaca.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoPlaca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoTipo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transito/Vehiculo/Dominio/VehiculoTipo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/transito/ticket/domain/TicketTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Transito/Ticket/domain/TicketTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +207,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DDD/cqrs-ddd-php-example" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -428,6 +275,9 @@
       <workItem from="1603136733553" duration="7178000" />
       <workItem from="1603221906932" duration="14000" />
       <workItem from="1603329347380" duration="16900000" />
+      <workItem from="1603374605266" duration="3869000" />
+      <workItem from="1603481903004" duration="79000" />
+      <workItem from="1603566198362" duration="8561000" />
     </task>
     <task id="LOCAL-00001" summary="primera prueba jordan">
       <created>1602816798954</created>
@@ -542,21 +392,29 @@
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="259" y="87" width="1081" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1602857806323" />
-    <state x="572" y="87" key="#com.intellij.ide.util.MemberChooser" timestamp="1603347645724">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1603574163306">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="572" y="87" key="#com.intellij.ide.util.MemberChooser/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603347645724" />
-    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1602951512619" />
+    <state x="488" y="105" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1603574163306" />
     <state x="728" y="233" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603346395595">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="728" y="233" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603346395595" />
-    <state x="584" y="187" key="FileChooserDialogImpl" timestamp="1603346944690">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="476" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603574208912">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="476" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1366.738@0.30.1366.738" timestamp="1603574208912" />
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603576872368">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738@0.30.1366.738" timestamp="1603576872368" />
+    <state x="499" y="191" key="FileChooserDialogImpl" timestamp="1603481976355">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="584" y="187" key="FileChooserDialogImpl/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603346944690" />
     <state x="2099" y="234" key="FileChooserDialogImpl/0.0.1600.855/1600.66.1366.768@1600.66.1366.768" timestamp="1602989006048" />
-    <state x="499" y="191" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1602948060974" />
+    <state x="499" y="191" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1603481976355" />
     <state x="129" y="86" key="MergeDialog" timestamp="1602887434422">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -565,17 +423,17 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="313" y="153" key="MultipleFileMergeDialog/0.30.1366.738@0.30.1366.738" timestamp="1602887434433" />
-    <state x="664" y="144" key="NewPhpClassDialog" timestamp="1603347579554">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="433" y="106" key="NewPhpClassDialog" timestamp="1603576888460">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="664" y="144" key="NewPhpClassDialog/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603347579554" />
-    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1602953049047" />
-    <state x="216" y="16" width="908" height="732" key="SettingsEditor" timestamp="1603147633930">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="433" y="106" key="NewPhpClassDialog/0.30.1366.738@0.30.1366.738" timestamp="1603576888460" />
+    <state x="184" y="44" width="908" height="732" key="SettingsEditor" timestamp="1603566811959">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="216" y="16" width="932" height="732" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603147633930" />
     <state x="1865" y="102" width="908" height="732" key="SettingsEditor/0.0.1600.855/1600.66.1366.768@1600.66.1366.768" timestamp="1602987672035" />
-    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1602888516347" />
+    <state x="184" y="44" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1603566811959" />
     <state width="584" height="498" key="SwitcherDM" timestamp="1603348096124">
       <screen x="0" y="0" width="1600" height="855" />
     </state>
@@ -606,11 +464,11 @@
       <screen x="0" y="0" width="1600" height="855" />
     </state>
     <state x="460" y="192" key="run.anything.popup/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603341840284" />
-    <state x="405" y="67" width="788" height="786" key="search.everywhere.popup" timestamp="1603345469337">
-      <screen x="0" y="0" width="1600" height="855" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1603576692885">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="405" y="67" width="788" height="786" key="search.everywhere.popup/0.0.1600.855/1600.66.1366.768@0.0.1600.855" timestamp="1603345469337" />
     <state x="1946" y="126" width="673" height="707" key="search.everywhere.popup/0.0.1600.855/1600.66.1366.768@1600.66.1366.768" timestamp="1602987662522" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1602946084244" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1603576692885" />
   </component>
 </project>
