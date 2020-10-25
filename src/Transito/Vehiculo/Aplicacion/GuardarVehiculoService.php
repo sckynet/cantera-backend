@@ -27,11 +27,10 @@ class GuardarVehiculoService
 
     public function __invoke(VehiculoRequest $request): GuardarVehiculoResponse
     {
-        $conductor = new Conductor(new ConductorId(1),new ConductorIdentificacion('123456789'),new ConductorNombre('CAMILO'),new CondutorTelefono('3187545196'));
+
+        $conductor = new Conductor(new ConductorIdentificacion('1065848333'), new ConductorNombre('CAMILO'), new CondutorTelefono('3187545196'));
         $vehiculo = new Vehiculo(new VehiculoId($request->getId()), new VehiculoPlaca($request->getPlaca()), new VehiculoCapacidad($request->getCapacidad()), new VehiculoTipo($request->getTipo()), $conductor);
         $this->repository->save($vehiculo);
-        //$mensaje = 'El Vehiculo ABC-806 se guardo satisfactoriamente';
-        //return new GuardarVehiculoResponse($mensaje);
         return new GuardarVehiculoResponse(sprintf('El Vehiculo %s se guardo satisfactoriamente', $request->getPlaca()));
     }
 

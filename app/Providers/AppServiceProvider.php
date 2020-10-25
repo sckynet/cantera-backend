@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Cantera\Transito\Conductor\Dominio\IConductorRepository;
-use Cantera\Transito\Conductor\Infraestructura\ConductorElquentRepository;
+use Cantera\Transito\Conductor\Infraestructura\Persistencia\ConductorElquentRepository;
 use Cantera\Transito\Material\Dominio\IMaterialRepository;
 use Cantera\Transito\Material\Infraestructura\MaterialEloquentRepository;
 use Cantera\Transito\Vehiculo\Dominio\IVehiculoRepository;

@@ -13,10 +13,9 @@ class GuardarConductorTest extends TestCase {
 
        $response = $this->post('api/conductor',[
           'identificacion' => '1065848333',
-          'nombre' => 'camilo',
+          'nombre' => 'CAMILO',
           'telefono' => '3017764758'
        ]);
-
        $response->assertStatus(201)
                 ->assertSeeText('El conductor camilo con identificacion 1065848333 se ha guardado correctamente');
     }
