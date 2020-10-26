@@ -3,6 +3,7 @@
 namespace Cantera\Transito\Conductor\Infraestructura;
 
 use Cantera\Transito\Conductor\Dominio\Conductor;
+use Cantera\Transito\Conductor\Dominio\ConductorIdentificacion;
 use Cantera\Transito\Conductor\Dominio\IConductorRepository;
 use Cantera\Transito\Conductor\Infraestructura\Persistencia\Eloquent\ConductorModel;
 
@@ -20,6 +21,12 @@ class ConductorElquentRepository implements IConductorRepository
     {
        $this->model->fill($conductor->toArray());
        $this->model->save();
+    }
+
+    public function search(ConductorIdentificacion $identificacion): ?Conductor
+    {
+        $conductor = ConductorModel::where('identificacion',$identificacion->value())->first();
+        return $conductor;
     }
 
 }

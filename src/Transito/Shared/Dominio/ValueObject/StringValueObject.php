@@ -6,7 +6,7 @@ namespace Cantera\Transito\Shared\Dominio\ValueObject;
 
 abstract class StringValueObject
 {
-    protected $value;
+    protected string $value;
 
     public function __construct(string $value)
     {

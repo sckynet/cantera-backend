@@ -4,9 +4,9 @@ namespace Cantera\Transito\Conductor\Dominio;
 
 class Conductor
 {
-    private $identificacion;
-    private $nombre;
-    private $telefono;
+    private ConductorIdentificacion $identificacion;
+    private ConductorNombre $nombre;
+    private CondutorTelefono $telefono;
 
     public function __construct(ConductorIdentificacion $identificacion, ConductorNombre $nombre, CondutorTelefono $telefono) {
         $this->nombre = $nombre;
