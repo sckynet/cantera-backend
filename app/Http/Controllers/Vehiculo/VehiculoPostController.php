@@ -17,16 +17,8 @@ class VehiculoPostController extends Controller
         $capacidad = $request->capacidad;
         $conductor_id = $request->conductor_id;
         $vehiculoRequest = new VehiculoRequest(0, $placa, $tipo, $capacidad, $conductor_id);
-
         $servicio = app()->make(GuardarVehiculoService::class);
-
         $response = $servicio($vehiculoRequest);
-//        try {
-//
-//        }catch (\Exception $exception){
-//            var_dump($exception);
-//        }
-
         return response($response->getMensaje(), Response::HTTP_CREATED);
     }
 }

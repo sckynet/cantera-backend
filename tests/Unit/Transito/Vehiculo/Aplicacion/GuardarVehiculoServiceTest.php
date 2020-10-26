@@ -30,7 +30,7 @@ class GuardarVehiculoServiceTest extends TestCase
         $request = new VehiculoRequest(rand(), 'ABC-806', 'VOLQUETA', 8, 1);
         $repository = $this->createMock(IVehiculoRepository::class);
         $service = new GuardarVehiculoService($repository);
-        $conductor = new Conductor(new ConductorId(1), new ConductorIdentificacion('123456789'), new ConductorNombre('CAMILO'), new CondutorTelefono('3187545196'));
+        $conductor = new Conductor(new ConductorIdentificacion('123456789'), new ConductorNombre('CAMILO'), new CondutorTelefono('3187545196'));
         $vehiculo = new Vehiculo(new VehiculoId($request->getId()), new VehiculoPlaca($request->getPlaca()), new VehiculoCapacidad($request->getCapacidad()), new VehiculoTipo($request->getTipo()), $conductor);
         $repository->method('save')->with($vehiculo);
 
