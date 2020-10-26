@@ -48,4 +48,24 @@ class Vehiculo
         return $this->conductor;
     }
 
+    public function toArray(bool $updated = false): array
+    {
+        if($updated){
+            return [
+                'id' => $this->getId()->value(),
+                'placa' => $this->getPlaca()->value(),
+                'tipo' => $this->getTipo()->value(),
+                'capacidad' => $this->getCapacidad()->value(),
+                'conductor_id' => $this->getConductor()->getIdentificacion()->value()
+            ];
+        }else{
+            return [
+                'placa' => $this->getPlaca()->value(),
+                'tipo' => $this->getTipo()->value(),
+                'capacidad' => $this->getCapacidad()->value(),
+                'conductor_id' => $this->getConductor()->getIdentificacion()->value()
+            ];
+        }
+    }
+
 }

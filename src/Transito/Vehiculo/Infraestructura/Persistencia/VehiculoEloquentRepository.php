@@ -19,6 +19,9 @@ class VehiculoEloquentRepository implements IVehiculoRepository
 
     public function save(Vehiculo $vehiculo): void
     {
+        $this->model->fill($vehiculo->toArray());
+
+        $this->model->save();
 
     }
 

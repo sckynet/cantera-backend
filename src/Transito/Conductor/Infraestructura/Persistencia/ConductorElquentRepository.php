@@ -1,6 +1,6 @@
 <?php
 
-namespace Cantera\Transito\Conductor\Infraestructura;
+namespace Cantera\Transito\Conductor\Infraestructura\Persistencia;
 
 use Cantera\Transito\Conductor\Dominio\Conductor;
 use Cantera\Transito\Conductor\Dominio\ConductorIdentificacion;
